@@ -1,0 +1,15 @@
+[submodule "services/sdx-controller"]
+	path = services/sdx-controller
+	url = https://github.com/atlanticwave-sdx/sdx-controller.git
+[submodule "services/sdx-lc"]
+	path = services/sdx-lc
+	url = https://github.com/atlanticwave-sdx/sdx-lc.git
+[submodule "services/datamodel"]
+	path = services/datamodel
+	url = https://github.com/atlanticwave-sdx/datamodel.git
+[submodule "services/pce"]
+	path = services/pce
+	url = https://github.com/atlanticwave-sdx/pce.git
+[submodule "services/kytos-sdx"]
+	path = services/kytos-sdx
+	url = https://github.com/atlanticwave-sdx/kytos-sdx.git
