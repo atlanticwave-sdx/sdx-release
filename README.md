@@ -19,11 +19,13 @@ It does not contain application code.
 
 ## Repository Structure
 
+```
 atlanticwave-sdx-root/
 ├── services/           # Git submodules
 ├── docker-compose.yml  # Platform orchestration
 ├── .gitmodules
 └── README.md
+```
 
 ---
 
@@ -31,24 +33,26 @@ atlanticwave-sdx-root/
 
 You must clone with submodules:
 
-```git clone --recurse-submodules https://github.com/atlanticwave-sdx/atlanticwave-sdx-root.git```
+```
+git clone --recurse-submodules https://github.com/atlanticwave-sdx/atlanticwave-sdx-root.git
+```
 
 If already cloned incorrectly:
-
+```
 git submodule update --init --recursive
-
+```
 
 ---
 
 ## Adding a New SDX Component
 
 If a new SDX repository is created:
-
+```
 git submodule add https://github.com/atlanticwave-sdx/<new-repo>.git services/<new-repo>
 git add .gitmodules services/<new-repo>
 git commit -m "Add <new-repo> as SDX component"
 git push
-
+```
 Optionally update docker-compose.yml.
 
 ---
@@ -148,15 +152,19 @@ Each repository still works standalone.
 Delete this repository. Full rollback.
 
 ### Remove a Component
+```
 git submodule deinit -f services/<repo>
 git rm -f services/<repo>
 rm -rf .git/modules/services/<repo>
 git commit -m "Remove <repo>"
 git push
+```
 
 ### Undo a Tag
+```
 git tag -d vX.Y.Z
 git push origin :refs/tags/vX.Y.Z
+```
 
 ### Add a New Component
 Follow the procedure above. Existing releases are unaffected.
