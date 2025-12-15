@@ -31,7 +31,12 @@ atlanticwave-sdx-root/
 
 You must clone with submodules:
 
-git clone --recurse-submodules https://github.com/atlanticwave-sdx/atlanticwave-sdx-root.git
+```git clone --recurse-submodules https://github.com/atlanticwave-sdx/atlanticwave-sdx-root.git```
+
+If already cloned incorrectly:
+
+git submodule update --init --recursive
+
 
 ---
 
@@ -45,6 +50,56 @@ git commit -m "Add <new-repo> as SDX component"
 git push
 
 Optionally update docker-compose.yml.
+
+---
+
+## Daily Development Workflow
+
+### Work on a component
+
+```
+cd services/sdx-controller
+git checkout main
+git pull
+# work
+git commit -am "Change description"
+git push
+```
+
+### Update the root repository pointer
+
+```
+cd ../../
+git add services/sdx-controller
+git commit -m "Update sdx-controller submodule"
+git push
+```
+
+This step is REQUIRED.
+
+---
+
+## Create a Unified SDX Release
+
+From the root repository:
+```
+git tag v1.0.0
+git push origin v1.0.0
+```
+This tag defines:
+
+- One SDX platform version
+- Exact commits of all components
+- A reproducible system state
+
+---
+
+## Verify Deployment (Optional)
+```
+docker compose build
+docker compose up -d
+docker compose ps
+```
 
 ---
 
