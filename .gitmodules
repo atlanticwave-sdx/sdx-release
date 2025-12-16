@@ -13,3 +13,6 @@
 [submodule "services/kytos-sdx"]
 	path = services/kytos-sdx
 	url = https://github.com/atlanticwave-sdx/kytos-sdx.git
+[submodule "services/sdx-oxp-integrator"]
+	path = services/sdx-oxp-integrator
+	url = https://github.com/atlanticwave-sdx/sdx-oxp-integrator.git
