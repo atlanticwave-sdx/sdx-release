@@ -2,7 +2,7 @@
 
 This repository is the authoritative source for AtlanticWave-SDX releases.
 
-A release is defined by a tag in this repository (`v2026.1.0`).
+A release is defined by a tag in this repository (`v2026.1.1`).
 That tag pins the exact component versions used to build the published artifacts.
 
 ## Use this release
