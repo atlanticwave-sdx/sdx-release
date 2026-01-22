@@ -130,5 +130,3 @@ AW-SDX 2026.1.0 is a coordinated software release of the AtlanticWave-SDX stack 
 |---|---|
 | GitHub Actions | Automated CI/CD |
 | Container publishing | Reproducible distribution |
-EOF
-
