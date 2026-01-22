@@ -1,18 +1,28 @@
+---
+title: AtlanticWave-SDX Releases
+nav_order: 1
+---
+
 # AtlanticWave-SDX Releases
 
-This repository is the authoritative source for AtlanticWave-SDX releases.
+This repository is the authoritative source for **AtlanticWave-SDX software releases**.
 
-A release is defined by a tag in this repository (`v2026.1.1`).
-That tag pins the exact component versions used to build the published artifacts.
+A release is defined by a versioned directory under **Releases**, which documents:
+- the scope of the release,
+- included components,
+- operational characteristics,
+- and traceability to component changelogs.
 
-## Use this release
+## How to use this repository
 
-### Path A: Operators (recommended)
-Run AtlanticWave-SDX using the published container images and the release compose file.
+### Operators (recommended)
+Use the published container images and the release documentation to deploy a specific AtlanticWave-SDX version.
 
-### Path B: Developers & Researchers
-Clone the code and use the development workflow to build/run from source.
+### Developers & Researchers
+Use the release documentation to identify component versions and reproduce builds from source.
 
-## Docs
+## Documentation
+
 - [Release process](release-process.md)
 - [Releases](releases/)
+
