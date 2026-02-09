@@ -4,8 +4,6 @@ parent: Releases
 nav_order: 2026010
 ---
 
-# AW-SDX 2026.1.0
-
 **Release Date:** 01/22/2026  
 **Component Baseline:** v3.2.0  
 **Automation:** GitHub Actions (CI/CD)  

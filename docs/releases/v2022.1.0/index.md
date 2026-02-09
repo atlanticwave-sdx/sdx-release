@@ -4,8 +4,6 @@ parent: Releases
 nav_order: 2022010
 ---
 
-# AW-SDX 2022.1.0
-
 **Release Date:** 06/23/2022  
 **Platform Tag:** 1.0.0  
 
